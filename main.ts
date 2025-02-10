@@ -1,3 +1,12 @@
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`myAnim1`,
+    200,
+    false
+    )
+    mySprite.sayText("Jumping Jacks", 1000, false)
+})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -15,6 +24,33 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
     mySprite.sayText("Squats", 1000, false)
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`myAnim2`,
+    200,
+    false
+    )
+    mySprite.sayText("Throwing Ball", 1000, false)
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`myAnim0`,
+    200,
+    false
+    )
+    mySprite.sayText("Walking", 1000, false)
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    mySprite,
+    assets.animation`myAnim`,
+    200,
+    false
+    )
+    mySprite.sayText("Handshake", 1000, false)
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
